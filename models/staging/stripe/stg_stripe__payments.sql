@@ -1,6 +1,7 @@
 select
-    id as customer_id,
-    status,
+    id AS paymentid, 
+    orderid, 
+    paymentmethod, 
+    status, 
     amount
-
-from dbt-tutorial.jaffle_shop.customers
+from dbt-tutorial.stripe.payment
